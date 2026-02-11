@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Video App{% endblock %}</title>
+    <title>{% block title %}Board Games App{% endblock %}</title>
     <!-- Qui potremmo linkare un CSS -->
     <style>
         body {
@@ -29,10 +29,9 @@
 
 <body>
     <nav>
-        <a href="{{ url_for('main.index') }}">Video App</a>
-        <a href="{{ url_for('main.create_channel') }}">Crea Canale</a>
-        <a href="{{ url_for('main.create_video') }}">Crea Video</a>
-        <a href="{{ url_for('main.create_category') }}">Crea Categoria</a>
+        <a href="{{ url_for('main.index') }}">Board Games App</a>
+        <a href="{{ url_for('main.create_game') }}">Crea Gioco</a>
+        <a href="{{ url_for('main.create_match') }}">Registra Partita</a>
     </nav>
     <hr>
 
@@ -49,7 +48,7 @@
 
     <hr>
     <footer>
-        <small>&copy; 2024 - Video App</small>
+        <small>&copy; 2024 - Board Games App</small>
     </footer>
 </body>
 
